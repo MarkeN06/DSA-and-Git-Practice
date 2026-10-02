@@ -13,10 +13,10 @@ public class Bubble{
                     niz[i+1]=temp;
                 }
             }
-            end-=1;
+            end-=1; //Smanjujemo gornju granicu niza
         }
         for(int i=0;i<niz.length;i++){
             System.out.print(niz[i]+" ");
         }
     }
-}
+}       // TIME COMPLEXITY O(n^2)
