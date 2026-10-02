@@ -15,4 +15,10 @@ void main() {
     System.out.println("Bubble sort:");
     bubble.sortiranje(niz);
 
+    System.out.println("\n");
+
+    Insertion insertion= new Insertion();
+    System.out.println("Insertion sort:");
+    insertion.sortiranje(niz);
+
 }
