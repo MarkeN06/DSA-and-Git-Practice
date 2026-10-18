@@ -11,4 +11,4 @@ Sorting Algorithms:
 <h2>Linked Lists Algorithms:</h2>  
 - Input/Remove Nodes  
 - Display List  
-- Reverse LinkedList
+- Reverse LinkedList  

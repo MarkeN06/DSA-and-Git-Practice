@@ -54,5 +54,54 @@ public class LinkedList {
         }
         head=prev; // Postavljamo head da bude na pocetku reversovane liste
     }
+    public Node deleteDuplicates(Node head) {
+        if(head == null)
+            return null;
+        Node temp=head;
+        while(temp.next!=null){
+            if(temp.data==temp.next.data){
+                temp.next=temp.next.next;
+            }
+            else{
+                temp=temp.next;
+            }
+        }
+        return head;
 
+    }
+
+    public Node deleteAllDuplicates(Node head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        while (head != null && head.next != null && head.data == head.next.data) {
+            int dupVal = head.data;
+            while (head != null && head.data == dupVal) {
+                head = head.next;
+            }
+        }
+
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        Node current = head;
+
+        while (current != null && current.next != null && current.next.next != null) {
+            if (current.next.data == current.next.next.data) {
+                int dupVal = current.next.data;
+                Node temp = current.next;
+
+                while (temp != null && temp.data == dupVal) {
+                    temp = temp.next;
+                }
+                current.next = temp;
+            } else {
+                current = current.next;
+            }
+        }
+
+        return head;
+    }
 }
