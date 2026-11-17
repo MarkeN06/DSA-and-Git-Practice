@@ -1,5 +1,6 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import sorting.Bubble;
+import sorting.Insertion;
+
 void main() {
 
     Scanner sc = new Scanner(System.in);
@@ -13,14 +14,14 @@ void main() {
     }
     int[] original=niz.clone();
     Bubble bubble= new Bubble();
-    System.out.println("Bubble sort:");
+    System.out.println("sorting.Bubble sort:");
     bubble.sortiranje(niz);
     niz=original;
 
     System.out.println("\n");
 
     Insertion insertion= new Insertion();
-    System.out.println("Insertion sort:");
+    System.out.println("sorting.Insertion sort:");
     insertion.sortiranje(niz);
 
     System.out.println("\n_______________________________________\n");

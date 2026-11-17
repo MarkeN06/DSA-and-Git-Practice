@@ -1,3 +1,5 @@
+package sorting;
+
 public class Insertion {
 
     public void sortiranje(int[] niz) {
