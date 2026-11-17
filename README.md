@@ -2,7 +2,7 @@
 <b>This is my attempt at learning Git and DSA  
 
 Sorting Algorithms:  
-- Insertion Sort  
+- sorting.Insertion Sort  
 - Selection Sort  
 - Quick Sort  
 - Merge Sort  
