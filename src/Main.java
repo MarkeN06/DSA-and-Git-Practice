@@ -1,5 +1,6 @@
 import sorting.Bubble;
 import sorting.Insertion;
+import tree.BinaryTree;
 
 void main() {
 
@@ -16,13 +17,14 @@ void main() {
     Bubble bubble= new Bubble();
     System.out.println("sorting.Bubble sort:");
     bubble.sortiranje(niz);
-    niz=original;
+    niz=original.clone();
 
     System.out.println("\n");
 
     Insertion insertion= new Insertion();
     System.out.println("sorting.Insertion sort:");
     insertion.sortiranje(niz);
+    niz=original.clone();
 
     System.out.println("\n_______________________________________\n");
 
@@ -33,5 +35,11 @@ void main() {
     linkedList.display();
     System.out.println("\n");
     linkedList.reverse();
+
+    System.out.println("\n______________________________________________\n");
+
+    BinaryTree tree = new BinaryTree(original);
+    tree.print();
+    System.out.println(tree.maxDepth(tree.root));
 
 }
